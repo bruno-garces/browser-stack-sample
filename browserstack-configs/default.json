@@ -1,0 +1,29 @@
+{
+  "package": ["com.example.browserstacksample.uitests"],
+  "coverage": true,
+  "deviceLogs": true,
+  "devices": ["Google Pixel 4-11.0"],
+  "allowDeviceMockServer": "true",
+  "project": "browserstacksample",
+  "shards": {
+    "numberOfShards": 2,
+    "mapping": [
+      {
+        "name": "Shard 1",
+        "strategy": "class",
+        "values": [
+          "com.example.browserstacksample.uitests.LoginTests",
+          "com.example.browserstacksample.uitests.UserProfileTests"
+        ]
+      },
+      {
+        "name": "Shard 2",
+        "strategy": "class",
+        "values": [
+          "com.example.browserstacksample.uitests.SearchTests",
+          "com.example.browserstacksample.uitests.CheckoutTests"
+        ]
+      }
+    ]
+  }
+}
